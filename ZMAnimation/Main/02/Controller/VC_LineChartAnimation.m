@@ -7,7 +7,7 @@
 //
 
 #import "VC_LineChartAnimation.h"
-
+#import "ZMHead.h"
 @interface VC_LineChartAnimation ()
 @property(nonatomic,strong)UIBezierPath * path;
 @end
@@ -93,5 +93,8 @@
         [_path addLineToPoint: CGPointMake(600, 150)];
     }
     return _path;
+}
+-(void)dealloc{
+    ZMLog(@"VC_LineChartAnimation 自爆完成");
 }
 @end

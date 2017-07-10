@@ -74,7 +74,10 @@ static NSString * const MainTableViewCellID = @"MainTableViewCellID";
     if (!_arr_Model) {
         _arr_Model = @[
                        [M_MainTableView initWIthClass:[VC_Login class] title:@"登录页面"],
-                       [M_MainTableView initWIthClass:[VC_LineChartAnimation class] title:@"心电图"]
+                       [M_MainTableView initWIthClass:[VC_LineChartAnimation class] title:@"心电图"],
+                       [M_MainTableView initWIthClass:[VC_Neure class] title:@"神经元"],
+                       [M_MainTableView initWIthClass:[VC_CollectionMove class] title:@"collectionView移动"],
+                       [M_MainTableView initWIthClass:[VC_Electric class] title:@"圆形进度条"]
                        ];
     }
     return _arr_Model;

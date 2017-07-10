@@ -116,7 +116,7 @@ UITextFieldDelegate
     [self.tfd_username endEditing:YES];
 }
 -(void)LoginAction:(UIButton *)btn{
-    NSLog(@"做点什么");
+    ZMLog(@"做点什么");
     btn.layer.cornerRadius = 20;
     btn.backgroundColor = [UIColor colorWithRed:0.85 green:0.83 blue:0.45 alpha:1];
 
@@ -270,5 +270,8 @@ UITextFieldDelegate
     tfd.font = [UIFont systemFontOfSize:15];
     
     return tfd;
+}
+-(void)dealloc{
+    ZMLog(@"VC_Login 自爆完成");
 }
 @end

@@ -12,9 +12,8 @@
 +(instancetype)initWIthClass:(Class)targetVC title:(NSString *)str_title{
     M_MainTableView * model = [[M_MainTableView alloc]init];
     model.str_title = str_title;
-   
     model.targetVC = targetVC;
-     model.str_subtitle = [NSString stringWithFormat:@"%@",model.targetVC];
+    model.str_subtitle = [NSString stringWithFormat:@"%@",model.targetVC];
     return model;
 }
 @end
