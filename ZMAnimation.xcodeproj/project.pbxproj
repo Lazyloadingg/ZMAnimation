@@ -12,6 +12,9 @@
 		0A6CDF851F1355E90090D365 /* VC_Neure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CDF831F1355E90090D365 /* VC_Neure.m */; };
 		0A6CDF8F1F136A600090D365 /* VC_CollectionMove.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CDF8E1F136A600090D365 /* VC_CollectionMove.m */; };
 		0A6CDF941F1381940090D365 /* VC_Electric.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CDF931F1381940090D365 /* VC_Electric.m */; };
+		0A6FDAA31F14B4FD00B96593 /* VC_ ViscousBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FDAA21F14B4FD00B96593 /* VC_ ViscousBtn.m */; };
+		0A6FDAA61F14B64D00B96593 /* V_ViscousBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FDAA51F14B64D00B96593 /* V_ViscousBtn.m */; };
+		0A6FDAAD1F14D69300B96593 /* VC_ Rubber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FDAAC1F14D69300B96593 /* VC_ Rubber.m */; };
 		96ECAF6A1F0E6C4C00D43BE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ECAF691F0E6C4C00D43BE9 /* main.m */; };
 		96ECAF731F0E6C4C00D43BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96ECAF711F0E6C4C00D43BE9 /* Main.storyboard */; };
 		96ECAF751F0E6C4C00D43BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96ECAF741F0E6C4C00D43BE9 /* Assets.xcassets */; };
@@ -55,6 +58,12 @@
 		0A6CDF8E1F136A600090D365 /* VC_CollectionMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_CollectionMove.m; sourceTree = "<group>"; };
 		0A6CDF921F1381940090D365 /* VC_Electric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC_Electric.h; sourceTree = "<group>"; };
 		0A6CDF931F1381940090D365 /* VC_Electric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_Electric.m; sourceTree = "<group>"; };
+		0A6FDAA11F14B4FD00B96593 /* VC_ ViscousBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VC_ ViscousBtn.h"; sourceTree = "<group>"; };
+		0A6FDAA21F14B4FD00B96593 /* VC_ ViscousBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VC_ ViscousBtn.m"; sourceTree = "<group>"; };
+		0A6FDAA41F14B64D00B96593 /* V_ViscousBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V_ViscousBtn.h; sourceTree = "<group>"; };
+		0A6FDAA51F14B64D00B96593 /* V_ViscousBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V_ViscousBtn.m; sourceTree = "<group>"; };
+		0A6FDAAB1F14D69300B96593 /* VC_ Rubber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VC_ Rubber.h"; sourceTree = "<group>"; };
+		0A6FDAAC1F14D69300B96593 /* VC_ Rubber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VC_ Rubber.m"; sourceTree = "<group>"; };
 		96ECAF651F0E6C4C00D43BE9 /* ZMAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96ECAF691F0E6C4C00D43BE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96ECAF721F0E6C4C00D43BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -223,6 +232,74 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0A6FDA9D1F14B4B900B96593 /* 06 */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FDA9E1F14B4B900B96593 /* Controller */,
+				0A6FDA9F1F14B4B900B96593 /* Model */,
+				0A6FDAA01F14B4B900B96593 /* View */,
+			);
+			path = 06;
+			sourceTree = "<group>";
+		};
+		0A6FDA9E1F14B4B900B96593 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FDAA11F14B4FD00B96593 /* VC_ ViscousBtn.h */,
+				0A6FDAA21F14B4FD00B96593 /* VC_ ViscousBtn.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A6FDA9F1F14B4B900B96593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A6FDAA01F14B4B900B96593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FDAA41F14B64D00B96593 /* V_ViscousBtn.h */,
+				0A6FDAA51F14B64D00B96593 /* V_ViscousBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A6FDAA71F14D66200B96593 /* 07 */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FDAA81F14D66200B96593 /* Controller */,
+				0A6FDAA91F14D66200B96593 /* Model */,
+				0A6FDAAA1F14D66200B96593 /* View */,
+			);
+			path = 07;
+			sourceTree = "<group>";
+		};
+		0A6FDAA81F14D66200B96593 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FDAAB1F14D69300B96593 /* VC_ Rubber.h */,
+				0A6FDAAC1F14D69300B96593 /* VC_ Rubber.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A6FDAA91F14D66200B96593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A6FDAAA1F14D66200B96593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		96ECAF5C1F0E6C4B00D43BE9 = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +374,8 @@
 				0A6CDF7D1F1312680090D365 /* 03 */,
 				0A6CDF891F136A350090D365 /* 04 */,
 				0A6CDF901F1381540090D365 /* 05 */,
+				0A6FDA9D1F14B4B900B96593 /* 06 */,
+				0A6FDAA71F14D66200B96593 /* 07 */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -507,10 +586,13 @@
 				96ECAFA61F0E6CDF00D43BE9 /* AppDelegate.m in Sources */,
 				0A6CDF8F1F136A600090D365 /* VC_CollectionMove.m in Sources */,
 				0A6CDF941F1381940090D365 /* VC_Electric.m in Sources */,
+				0A6FDAA61F14B64D00B96593 /* V_ViscousBtn.m in Sources */,
 				96ECAFAA1F0E6DFE00D43BE9 /* ZMBaseViewController.m in Sources */,
 				96ECAFB31F0E70C500D43BE9 /* V_MainCell.m in Sources */,
 				96ECAFB01F0E709F00D43BE9 /* VC_Main.m in Sources */,
+				0A6FDAA31F14B4FD00B96593 /* VC_ ViscousBtn.m in Sources */,
 				96ECAF6A1F0E6C4C00D43BE9 /* main.m in Sources */,
+				0A6FDAAD1F14D69300B96593 /* VC_ Rubber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

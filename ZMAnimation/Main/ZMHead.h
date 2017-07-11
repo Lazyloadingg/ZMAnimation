@@ -16,6 +16,8 @@
 #import "VC_Neure.h"
 #import "VC_CollectionMove.h"
 #import "VC_Electric.h"
+#import "VC_ ViscousBtn.h"
+#import "VC_ Rubber.h"
 #import "ZMBaseViewController.h"
 
 

@@ -37,10 +37,15 @@ static NSString * const MoveItemID = @"MoveItemID";
     
     UICollectionViewCell * item = [collectionView dequeueReusableCellWithReuseIdentifier:MoveItemID forIndexPath:indexPath];
     item.contentView.backgroundColor = randomColor;
-    UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(MoveItem:)];
-    [item addGestureRecognizer:longPress];
     
     return item;
+}
+-(BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+//移动Item必须实现方法
+-(void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+    
 }
 #pragma mark >_<! 👉🏻 🐷Custom Delegate🐷
 #pragma mark >_<! 👉🏻 🐷Event  Response🐷
@@ -73,6 +78,7 @@ static NSString * const MoveItemID = @"MoveItemID";
 
 #pragma mark >_<! 👉🏻 🐷Init SubViews🐷
 -(void)initSubviews{
+    
     UICollectionViewFlowLayout * layout  = [[UICollectionViewFlowLayout alloc]init];
     layout.itemSize = CGSizeMake((MainScreen_Width-30)/3, (MainScreen_Height-40)/4);
     layout.minimumLineSpacing = 10;
@@ -83,9 +89,12 @@ static NSString * const MoveItemID = @"MoveItemID";
     [ v_collection registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:MoveItemID];
     v_collection.delegate = self;
     v_collection.dataSource = self;
-    v_collection.pagingEnabled = YES;
+//    v_collection.pagingEnabled = YES;
     v_collection.backgroundColor = [UIColor whiteColor];
     self.v_collection = v_collection;
     [self.view addSubview:v_collection];
+    
+    UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(MoveItem:)];
+    [self.v_collection addGestureRecognizer:longPress];
 }
 @end

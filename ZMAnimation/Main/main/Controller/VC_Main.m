@@ -77,7 +77,9 @@ static NSString * const MainTableViewCellID = @"MainTableViewCellID";
                        [M_MainTableView initWIthClass:[VC_LineChartAnimation class] title:@"心电图"],
                        [M_MainTableView initWIthClass:[VC_Neure class] title:@"神经元"],
                        [M_MainTableView initWIthClass:[VC_CollectionMove class] title:@"collectionView移动"],
-                       [M_MainTableView initWIthClass:[VC_Electric class] title:@"圆形进度条"]
+                       [M_MainTableView initWIthClass:[VC_Electric class] title:@"圆形进度条"],
+                       [M_MainTableView initWIthClass:[VC__ViscousBtn class] title:@"粘滞Button"],
+                       [M_MainTableView initWIthClass:[VC__Rubber class] title:@"画板"]
                        ];
     }
     return _arr_Model;
