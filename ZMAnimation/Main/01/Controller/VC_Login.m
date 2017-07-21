@@ -201,7 +201,7 @@ UITextFieldDelegate
 -(void)loadDefaultsSetting{
     self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController.navigationBar.subviews.firstObject setAlpha:0];
-    self.navigationItem.title = @"Login";
+//    self.navigationItem.title = @"Login";
 }
 #pragma mark --> 🐷 初始化子视图 🐷
 -(void)initSubViews{

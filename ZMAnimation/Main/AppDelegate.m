@@ -7,21 +7,45 @@
 //
 
 #import "AppDelegate.h"
-#import "VC_Main.h"
+#import "ZMHead.h"
+#import <Lottie/Lottie.h>
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+-(void)changeRootController{
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[VC_Main new]];
+    
+    [self.window makeKeyAndVisible];
+}
+-(void)showAnimation{
+    LOTAnimationView * v_animation = [LOTAnimationView animationNamed:@"servishero_loading"];
+    v_animation.bounds = CGRectMake(0, 0, MainScreen_Width, MainScreen_Width);
+    v_animation.center = self.window.center;
+    v_animation.animationSpeed = 0.5;
+    v_animation.loopAnimation = YES;
+    [self.window addSubview:v_animation];
+    [v_animation play];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[VC_Main new]];
+    self.window.rootViewController = [ZMLaunchController new];
     
     [self.window makeKeyAndVisible];
+
+    LOTAnimationView * v_animation = [LOTAnimationView animationNamed:@"servishero_loading"];
+    v_animation.bounds = CGRectMake(0, 0, MainScreen_Width, MainScreen_Width);
+    v_animation.center = self.window.center;
+    v_animation.animationSpeed = 0.5;
+    v_animation.loopAnimation = YES;
+    [self.window addSubview:v_animation];
+    [v_animation play];
+    
+    [self performSelector:@selector(changeRootController) withObject:nil afterDelay:4];
     
     return YES;
 }

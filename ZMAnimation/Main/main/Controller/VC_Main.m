@@ -61,6 +61,8 @@ static NSString * const MainTableViewCellID = @"MainTableViewCellID";
 -(void)loadDefaultsSetting{
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"Main";
+    ;
+        [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[[UIColor redColor]colorWithAlphaComponent:0.5],NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue" size:16]}];
 }
 -(void)initSubViews{
     UITableView * tableview = [[UITableView alloc]initWithFrame:self.view.bounds];
@@ -79,7 +81,8 @@ static NSString * const MainTableViewCellID = @"MainTableViewCellID";
                        [M_MainTableView initWIthClass:[VC_CollectionMove class] title:@"collectionView移动"],
                        [M_MainTableView initWIthClass:[VC_Electric class] title:@"圆形进度条"],
                        [M_MainTableView initWIthClass:[VC__ViscousBtn class] title:@"粘滞Button"],
-                       [M_MainTableView initWIthClass:[VC__Rubber class] title:@"画板"]
+                       [M_MainTableView initWIthClass:[VC__Rubber class] title:@"画板"],
+                       [M_MainTableView initWIthClass:[VC_LottiesAnimation class] title:@"LottieAnimations"]
                        ];
     }
     return _arr_Model;

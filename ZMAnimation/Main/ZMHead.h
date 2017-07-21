@@ -18,7 +18,11 @@
 #import "VC_Electric.h"
 #import "VC_ ViscousBtn.h"
 #import "VC_ Rubber.h"
+#import "VC_LottiesAnimation.h"
+
 #import "ZMBaseViewController.h"
+#import "ZMLaunchController.h"
+#import "AppDelegate.h"
 
 
 #define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]

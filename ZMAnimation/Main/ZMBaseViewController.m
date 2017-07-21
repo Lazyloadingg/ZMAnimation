@@ -7,7 +7,7 @@
 //
 
 #import "ZMBaseViewController.h"
-
+#import "ZMHead.h"
 @interface ZMBaseViewController ()
 
 @end
@@ -21,6 +21,8 @@
     
     
 }
-
+-(void)dealloc{
+    ZMLog(@"%@ 号机自爆完成",[self class]);
+}
 
 @end
